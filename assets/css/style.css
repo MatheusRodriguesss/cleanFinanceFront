@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+
+:root {
+  --text-color: black;
+  --main-color: #859de1;
+  --title-color: #101828;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 920px) {
+  .metrics {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .metric span {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .about-us p {
+    max-width: 70%;
+  }
+
+  .vaga {
+    max-width: 70%;
+  }
+  
+  .vagas-abertas span.area-principal {
+    max-width: 70%;
+  }
+
+  .depoimento h2 {
+    max-width: 100%;
+    font-size: 120%;
+  }
+
+  /* Ajustes de menu aqui */
+
+  .sideMenu {
+    display: initial;
+    visibility: visible;
+  }
+
+  .links {
+    margin: 2rem 0;
+  }
+
+  .links a {
+    margin-right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu .links, .menu .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+form {
+   
+    
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+.form{
+    margin-left: 33%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 200px;
+    height: 200px;
+    box-shadow:
+            5px 5px 10px rgba(0, 0, 0, 0.5),
+            -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+    padding: 10px; /* Espaçamento interno do quadrado */
+    width: 400px; /* Largura do quadrado */
+    height: 400px; /* Altura do quadrado */
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.form > h1 {
+text-align: center;
+margin: 1rem;
+}
+.button {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    }
+.signUp{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: var(--main-color);
+}
+.signIn{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: var(--main-color);
+    
+}
+input {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+
+}
