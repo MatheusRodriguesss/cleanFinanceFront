@@ -3,14 +3,12 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
     // Obter os dados do formulário
     const formData = {
-        nome: document.getElementById("myForm").elements["nome"].value,
+        limite: document.getElementById("myForm").elements["limite"].value,
         cpf: document.getElementById("myForm").elements["cpf"].value,
-        email: document.getElementById("myForm").elements["email"].value,
-        telefone: document.getElementById("myForm").elements["telefone"].value
     };
 
-    // Enviar a requisição POST usando fetch()
-    fetch("http://localhost:8080/clientes/cadastrar", {
+    // Enviar a requisição POST usando fetch() com os dados em formato JSON
+    fetch("http://localhost:8080/cartoes/cadastrar", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -1,0 +1,29 @@
+.caixa-formulario{
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.div-cliente-botoes{
+    display: flex;
+}
+
+.div-cliente-botoes button{
+    background-color: gray;
+    border: 1px black solid;
+    margin: auto;
+    width: 100px;
+    height: 40px;
+}
+
+.container-listagem-clientes{
+    margin: auto;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.teste-lista-cliente{
+    padding: 10px;
+}

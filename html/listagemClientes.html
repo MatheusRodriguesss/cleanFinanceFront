@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/listagem-clientes.css">
 </head>
 <body>
   <nav>
     <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png"/>   </a>
     
     <div class="sideMenu">
-      <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
+      <img src="../assets/images/menu-icon.svg" alt="Menu Icon">
     </div>
     <div class="menu">
       <div class="links">
@@ -30,14 +31,14 @@
       </div>
     </div>
   </nav>
-<h1>Listagem de clientes</h1>
-    <form>
+  <form class="caixa-formulario">
+    <h1>Listagem de clientes</h1>
     <input type="email" placeholder="Informe o CPF">
     <button class="signUp">Pesquisar</button>
   </form>
 
   <section>
-    sdaidjaidjiajdsaisj
+    <div id="dados-container" class="container-listagem-clientes"></div>
     </section>
   
 <footer>
@@ -61,12 +62,13 @@
               <li> <a href="../html/compras.html"> Compras </a> </li>
               <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
           </ul>
-      </div>
-      
-      </div>
+      </div>  
+    </div>
    
     <span> </span>
   </footer>
-  <script src="index.js"></script>
+
+  <script src="../assets/js/excluirCliente.js"></script>
+<script src="../assets/js/listagemClientes.js"></script>
 </body>
 </html>
