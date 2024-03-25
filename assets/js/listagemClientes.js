@@ -14,12 +14,12 @@ function exibirDados(page) {
     container.innerHTML = "";
     
     page.content.forEach(function(cliente) {
-        var clienteHtml = "<div class='div-cliente-botoes'><div class='teste-lista-cliente'>";
-        clienteHtml += "<p>Nome: " + cliente.nome + "</p>";
-        clienteHtml += "<p>Cpf: " + cliente.cpf + "</p>";
-        clienteHtml += "<p>Email: " + cliente.email + "</p>";
-        clienteHtml += "<p>Telefone: " + cliente.telefone + "</p>";
-        clienteHtml += "</div><div><button>Alterar</button><button onclick='excluirCliente(" + cliente.id + ")'>Excluir</button></div></div>";
+        var clienteHtml = "<table><thead><tr><th>CPF</th><th>Nome</th><th>Email</th><th>Telefone</th><th class='acoes'>Ações</th></tr></thead>";
+        clienteHtml += "<tbody><tr><td>Nome: " + cliente.nome +"</td>";
+        clienteHtml += "<td>Cpf: " + cliente.cpf +"</td>";
+        clienteHtml += "<td>Email: " + cliente.email +"</td>";
+        clienteHtml += "<td>Telefone: " + cliente.telefone +"</td>";
+        clienteHtml += "<td><button>Alterar</button><button>Excluir</button></td></tr></tbody></table>";
         container.innerHTML += clienteHtml;
     });
 }
