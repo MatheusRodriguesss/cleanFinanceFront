@@ -1,14 +1,16 @@
 @charset "utf-8";
 
 form {
+    margin: 15px;
    display: flex;
    flex-direction: column;
    text-align: center;
    align-items: center;
    justify-content: space-between;
-   gap: 20px;
+   gap: 1.5em;
 }
 .form{
+    gap: 2em;
     margin-left: 33%;
     margin-bottom: 2%;
     margin-top: 2%;
@@ -28,13 +30,12 @@ form {
 }
 .form > h1 {
 text-align: center;
-margin: 1rem;
+margin: 10rem;
 }
 .button {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 15px;
     }
 .signUp{
     border: 1px solid black;
@@ -51,5 +52,5 @@ input {
     border: 1px solid black;
     border-radius: 20px;
     padding: 10px;
-
+    margin: em;
 }

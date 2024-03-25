@@ -6,11 +6,10 @@ footer {
     justify-content: center;
     align-items: center;
     background: #F9FAFB;
-    padding: 6rem 1rem;
+    padding: 3rem 1rem;
     gap: 1.5rem;
     text-align: center;
     box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.5);
-    background-color:aquamarine;
   }
 
   
