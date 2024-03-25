@@ -22,6 +22,13 @@ form {
     padding: 10px; 
     width: 400px; 
     height: 400px; 
+    box-shadow:
+            5px 5px 10px rgba(0, 0, 0, 0.5),
+            -5px -5px 10px rgba(255, 255, 255, 0.5);
+
+    padding: 10px; /* Espaçamento interno do quadrado */
+    width: 400px; /* Largura do quadrado */
+    height: 400px; /* Altura do quadrado */
     align-items: center;
     justify-content: center;
     border-radius: 10px;
