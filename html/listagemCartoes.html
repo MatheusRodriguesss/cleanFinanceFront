@@ -8,11 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/listagemClientes.css">
 </head>
 <body>
+  <header>
   <nav>
     <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png"/>   </a>
+    
     <div class="sideMenu">
       <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
     </div>
@@ -29,14 +31,47 @@
       </div>
     </div>
   </nav>
+</header>
+<main>
+
+<section>
+  <h1>Listagem de Cartões</h1> 
+  <button class="signUp">Cadastrar novo cartão</button>
+</section>
 
     <form>
-    <input type="email" placeholder="Seu e-mail">
-    <button class="signUp">Cadastrar</button>
-
+    <input type="email" placeholder="Digite o número do cartão: ">
+    <input type="email" placeholder="Digite o cpf do titular: ">
+    <button class="signUp">Pesquisar</button>
   </form>
-
-  <footer>
+  <h2>Tabela de Cartões de Crédito</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Cliente</th>
+                <th>Limite</th>
+                <th>Validade</th>
+                <th class="acoes">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui você colocaria os dados da tabela usando PHP, Angular, React, etc. -->
+            <tr>
+                <td>1234 5678 9012 3456</td>
+                <td>Fulano de Tal</td>
+                <td>R$ 5.000,00</td>
+                <td>12/2024</td>
+                <td>
+                    <button>Alterar limite</button>
+                    <button>Ver fatura</button>
+                    <button>Ativar/Desativar</button> 
+                    <!-- aqui deve ser usado js para alterar o estado do botao após clicar no mesmo -->
+                </td>
+            </tr>
+            </table>
+</main>  
+<footer>
     <h2> Todos os direitos reservados para CleanFinance&trade;. </h2>
     <div class="grid-footer">
       <div class="grid-ul">
