@@ -34,10 +34,10 @@
 <div class="form">
   <h1>Cadastro de clientes </h1>
     <form id="myForm" method="POST">
-    <input type="text" placeholder="Digite seu nome: ">
-    <input type="text" placeholder="Digite seu cpf: ">
-    <input type="email" placeholder="Digite seu e-mail:">
-    <input type="text" placeholder="Seu telefone: " id="telefone"> 
+    <input type="text" name="nome" placeholder="Digite seu nome: ">
+    <input type="text" name="cpf" placeholder="Digite seu cpf: " id="cpf" maxlength="15">
+    <input type="email" name="email" placeholder="Digite seu e-mail:">
+    <input type="text" name="telefone" placeholder="Seu telefone: " id="telefone"> 
   <div class="button">
     <button class="signUp" type="submit">Cadastrar</button>
     <button class="signUp">Cancelar</button>
@@ -72,8 +72,8 @@
     <span> </span>
   </footer>
   <script src="../index.js"></script>
-  <script src="../js/excluirClientes.js"></script>
   <script src="../js/cadastroCliente.js"></script>
+  <script src="../js/organizadorCpf.js"></script>
   <script src="../js/organizadorNumero.js"></script>
 </body>
 </html>
