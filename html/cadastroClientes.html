@@ -31,18 +31,17 @@
     </div>
   </nav>
 
-<div class="form">
-  <h1>Cadastro de clientes </h1>
-    <form>
-    <input type="text" placeholder="Digite seu nome: ">
-    <input type="text" placeholder="Digite seu cpf: ">
-    <input type="email" placeholder="Digite seu e-mail:">
-    <input type="text" placeholder="Seu telefone: "> 
-  </form>
-  <div class="button">
-    <button class="signUp">Cadastrar</button>
-    <button class="signUp">Cancelar</button>
-  </div>
+  <div class="form">
+    <h1>Cadastro de clientes </h1>
+      <form id="myForm" method="POST">
+      <input type="text" name="nome" placeholder="Digite seu nome: ">
+      <input type="text" name="cpf" placeholder="Digite seu cpf: ">
+      <input type="email" name="email" placeholder="Digite seu e-mail:">
+      <input type="text" name="telefone" placeholder="Seu telefone: " id="telefone"> 
+      <div class="button">
+        <button type="submit" class="signUp">Cadastrar</button>
+        <button class="signUp">Cancelar</button>
+      </div>
   
 </div>
   <footer>
@@ -72,5 +71,8 @@
    
     <span> </span>
   </footer>
+  <script src="../index.js"></script>
+  <script src="../js/cadastroCliente.js"></script>
+  <script src="../js/organizarNumero.js"></script>
 </body>
 </html>
