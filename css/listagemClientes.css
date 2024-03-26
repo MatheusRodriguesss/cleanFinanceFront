@@ -1,8 +1,16 @@
 @charset "utf-8";
 @import url(style.css);
-section{
-    
+
+.signUp{
+    margin: 20px auto;
+    border: black 1px solid;
+    border-radius: 5px;
+    max-height: 100px;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
+
 table {
     width: 100%;
     border-collapse: collapse;
