@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,86 +8,75 @@
   <title>CleanFinance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/listagemClientes.css">
 </head>
+
 <body>
   <header>
 
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
 
-  <nav>
-    <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png"/>   </a>
-    
-    <div class="sideMenu">
-      <img src="../assets/images/menu-icon.svg" alt="Menu Icon">
+    <body>
+
+      <nav>
+        <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png" /> </a>
+
+        <div class="sideMenu">
+          <img src="../assets/images/menu-icon.svg" alt="Menu Icon">
+        </div>
+        <div class="menu">
+          <div class="links">
+            <a href="listagemClientes.html">Clientes</a>
+            <a href="listagemCartoes.html">Cartões</a>
+            <a href="compras.html">Compras</a>
+            <a href="relatorios.html">Relatórios</a>
+          </div>
+          <div class="buttons">
+            <button><a href="login.html">Login</a></button>
+            <button id="signUp"><a href="cadastroClientes.html">Cadastrar cliente</a></button>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+  <main>
+
+    <section>
+      <h1>Listagem de clientes</h1>
+      <button class="signUp"> <a href="cadastroClientes.html">Cadastrar novo cliente </a></button>
+    </section>
+
+    <div class="search">
+      <form>
+        <input type="text" placeholder="Informe o CPF">
+        <button class="signUp">Pesquisar</button>
+      </form>
     </div>
-    <div class="menu">
-      <div class="links">
-        <a href="listagemClientes.html">Clientes</a>
-        <a href="listagemCartoes.html">Cartões</a>
-        <a href="compras.html">Compras</a>
-        <a href="relatorios.html">Relatórios</a>
-      </div>
-      <div class="buttons">
-        <button>Login</button>
-        <button id="signUp">Cadastrar cliente</button>        
-      </div>
-    </div>
-  </nav>
-
-</header>
-<main>
-
-<section>
-  <h1>Listagem de clientes</h1> 
-  <button class="signUp"> <a href="cadastroClientes.html">Cadastrar novo cliente </a></button>
-</section>
-
-<div class="search">
-    <form>
-    <input type="text" placeholder="Informe o CPF">
-    <button class="signUp">Pesquisar</button>
-  </form>
-</div>
-<table>
-  <thead>
-    <tr>
-      <th>CPF</th>
-      <th>Nome</th>
-      <th>Email</th>
-      <th>Telefone</th>
-      <th class='acoes'>Ações</th>
-    </tr>
-  </thead>
-  <tbody id="dados-container">
-  </tbody>
-</table>
-</main>  
+    <table>
+      <thead>
+        <tr>
+          <th>CPF</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th class='acoes'>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="dados-container">
+      </tbody>
+    </table>
+  </main>
 
 
-<footer>
+  <footer>
     <h2> Todos os direitos reservados para CleanFinance&trade;. </h2>
-    <div class="grid-footer">
-      <div class="grid-ul">
-          <div class="item">
-              <ul>
-                  <li><b>Mapa do site</b></li>
-                  <li> <a href="../html/listagemClientes.html"> Clientes </a> </li>
-                  <li> <a href="../html/cartoes.html"> Cartões</a> </li>
-                  <li> <a href="../html/compras.html"> Compras </a> </li>
-                  <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
-              </ul>
-          </div>      
-      </div>
-   
-    <span> </span>
   </footer>
   <script src="../index.js"></script>
   <script src="../js/excluirClientes.js"></script>
   <script src="../js/listagemClientes.js"></script>
 </body>
+
 </html>
