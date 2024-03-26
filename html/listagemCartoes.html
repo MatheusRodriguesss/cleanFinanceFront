@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,73 +8,65 @@
   <title>CleanFinance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/listagemCartoes.css">
 </head>
+
 <body>
   <header>
-  <nav>
-    <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png"/>   </a>
-    
-    <div class="sideMenu">
-      <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
-    </div>
-    <div class="menu">
-      <div class="links">
-        <a href="listagemClientes.html">Clientes</a>
-        <a href="cartoes.html">Cartões</a>
-        <a href="compras.html">Compras</a>
-        <a href="relatorios.html">Relatórios</a>
-      </div>
-      <div class="buttons">
-        <button>Login</button>
-        <button id="signUp">Cadastrar cliente</button>        
-      </div>
-    </div>
-  </nav>
-</header>
-<main>
+    <nav>
+      <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png" /> </a>
 
-<section>
-  <h1>Listagem de Cartões</h1> 
-  <button class="signUp"><a href="cadastroCartão.html"> Cadastrar novo cartão</a></button>
-</section>
+      <div class="sideMenu">
+        <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
+      </div>
+      <div class="menu">
+        <div class="links">
+          <a href="listagemClientes.html">Clientes</a>
+          <a href="cartoes.html">Cartões</a>
+          <a href="compras.html">Compras</a>
+          <a href="relatorios.html">Relatórios</a>
+        </div>
+        <div class="buttons">
+          <button>Login</button>
+          <button id="signUp">Cadastrar cliente</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
 
-<div class="search">
-    <form>
-    <input type="email" placeholder="Digite o número do cartão: ">
-    <input type="email" placeholder="Digite o cpf do titular: ">
-    <button class="signUp">Pesquisar</button>
-  </form>
-</div>
+    <section>
+      <h1>Listagem de Cartões</h1>
+      <button class="signUp"><a href="cadastroCartão.html"> Cadastrar novo cartão</a></button>
+    </section>
+
+    <div class="search">
+      <form>
+        <input type="email" placeholder="Digite o número do cartão: ">
+        <input type="email" placeholder="Digite o cpf do titular: ">
+        <button class="signUp">Pesquisar</button>
+      </form>
+    </div>
     <table>
-        <thead>
-            <tr>
-                <th>Número</th>
-                <th>Cliente</th>
-                <th>Limite</th>
-                <th>Validade</th>
-                <th class="acoes">Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1234 5678 9012 3456</td>
-                <td>Fulano de Tal</td>
-                <td>R$ 5.000,00</td>
-                <td>12/2024</td>
-                <td>
-                    <button class="limite">Alterar limite</button>
-                    <button class="fatura">Ver fatura</button>
-                    <button class="ativar">Ativar/Desativar</button> 
-                    <!-- aqui deve ser usado js para alterar o estado do botao após clicar no mesmo -->
-                </td>
-            </tr>
-            </table>
-</main>  
-<footer>
+      <thead>
+        <tr>
+          <th>Número</th>
+          <th>Cliente</th>
+          <th>Limite</th>
+          <th>Validade</th>
+          <th class="acoes">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="dados-container">
+      </tbody>
+    </table>
+  </main>
+  <footer>
     <h2> Todos os direitos reservados para CleanFinance&trade;. </h2>
-    </footer>
+  </footer>
   <script src="index.js"></script>
+  <script src="../js/listagemCartoes.js"></script>
 </body>
+
 </html>
