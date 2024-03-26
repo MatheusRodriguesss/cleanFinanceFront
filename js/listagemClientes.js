@@ -19,7 +19,7 @@ function exibirDados(page) {
         clienteHtml += "<td>Cpf: " + cliente.cpf +"</td>";
         clienteHtml += "<td>Email: " + cliente.email +"</td>";
         clienteHtml += "<td>Telefone: " + cliente.telefone +"</td>";
-        clienteHtml += "<td><button>Alterar</button><button onclick='excluirCliente("+ cliente.id +")'>Excluir</button></td></tr>";
+        clienteHtml += "<td><button class='edit'>Editar</button><button class='delete' onclick='excluirCliente("+ cliente.id +")'>Excluir</button></td></tr>";
         container.innerHTML += clienteHtml;
     });
 }
