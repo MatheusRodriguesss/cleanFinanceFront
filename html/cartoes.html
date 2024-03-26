@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanFinance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="../index.html"><img src="../assets/images/icons8-material-ui-48.png"/>   </a>
+    <div class="sideMenu">
+      <img src="./assets/images/menu-icon.svg" alt="Menu Icon">
+    </div>
+    <div class="menu">
+      <div class="links">
+        <a href="listagemClientes.html">Clientes</a>
+        <a href="cartoes.html">Cartões</a>
+        <a href="compras.html">Compras</a>
+        <a href="relatorios.html">Relatórios</a>
+      </div>
+    </div>
+  </nav>
+
+  </form>
+</body>
+</html>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <h2>Alterar Limite do Cartão</h2>
+    <link rel="stylesheet" href="cartoes.css">
+    <label for="cartao">Cartão:</label>
+    <p id="numeroCartao"></p>
+    <label for="limite">Limite:</label>
+    <p id="limite"></p>
+    <label for="validade">Validade:</label>
+    <p id="validade"></p>
+    <label for="cliente">Cliente:</label>
+    <p id="cliente"></p>
+    <label for="cpf">CPF:</label>
+    <p id="cpf"></p>
+    <label for="novoLimite">Novo Limite:</label>
+    <input type="number" id="novoLimite" placeholder="Novo limite">
+    <button onclick="alterarLimite()">Alterar</button>
+    <button onclick="fecharModal()">Cancelar</button>
+    <script src="cartoes.js"></script>
+    
+  </div>
+</div>

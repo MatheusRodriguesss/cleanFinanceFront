@@ -35,34 +35,44 @@
     <button class="signUp">Cadastrar</button>
   </form>
 
-
-  <footer>
-    <h2> Todos os direitos reservados para CleanFinance&trade;. </h2>
-    <div class="grid-footer">
-      <div class="grid-ul">
-          <div class="item">
-              <ul>
-                  <li><b>Mapa do site</b></li>
-                  <li> <a href="../html/listagemClientes.html"> Clientes </a> </li>
-                  <li> <a href="../html/cartoes.html"> Cartões</a> </li>
-                  <li> <a href="../html/compras.html"> Compras </a> </li>
-                  <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
-              </ul>
-          </div>
-      <div class="item">
-          <ul>
-              <li><b>Fale conosco</b></li>
-              <li> <a href="../html/listagemClientes.html"> Clientes </a> </li>
-              <li> <a href="../html/cartoes.html"> Cartões</a> </li>
-              <li> <a href="../html/compras.html"> Compras </a> </li>
-              <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
-          </ul>
-      </div>
-      
-      </div>
-   
-    <span> </span>
-  </footer>
   <script src="index.js"></script>
 </body>
 </html>
+<title>Visualizar Gastos por Categoria</title>
+<link rel="stylesheet" href="relatorios.css">
+<div class="container">
+  <h2>Visualizar Gastos por Categoria</h2>
+  <div class="form">
+    <label for="cartao">Cartão:</label>
+    <select id="cartao">
+      <option value="cartao1">Cartão 1</option>
+      <option value="cartao2">Cartão 2</option>
+      <option value="cartao3">Cartão 3</option>
+    </select>
+    <label for="mes">Selecione o mês:</label>
+    <input type="month" id="mes">
+    <button onclick="visualizarGastos()">Visualizar</button>
+  </div>
+  <div id="resultado"></div>
+</div>
+<script src="relatorios.js"></script>
+
+  <title>Relatório de Acompanhamento de Clientes</title>
+  <link rel="stylesheet" href="relatoriosdeacompanhamento.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Relatório de Acompanhamento de Clientes</h2>
+    <div class="form">
+      <label for="mes">Selecione o mês:</label>
+      <input type="month" id="mes">
+      <button onclick="visualizarRelatorio()">Visualizar</button>
+    </div>
+    <div id="clientesMaisCompras" class="relatorio"></div>
+    <div id="clientesMaiorValor" class="relatorio"></div>
+    <div id="clientesSemCompras" class="relatorio"></div>
+  </div>
+  <script src="relatoriosdeacompanhamento.js"></script>
+</body>
+</html>
+
