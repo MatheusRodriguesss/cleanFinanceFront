@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="../css/listagemClientes.css">
+  <link rel="stylesheet" href="../css/listagemCartoes.css">
 </head>
 <body>
   <header>
@@ -36,15 +36,16 @@
 
 <section>
   <h1>Listagem de Cartões</h1> 
-  <button class="signUp">Cadastrar novo cartão</button>
+  <button class="signUp"><a href="cadastroCartão.html"> Cadastrar novo cartão</a></button>
 </section>
 
+<div class="search">
     <form>
     <input type="email" placeholder="Digite o número do cartão: ">
     <input type="email" placeholder="Digite o cpf do titular: ">
     <button class="signUp">Pesquisar</button>
   </form>
-  <h2>Tabela de Cartões de Crédito</h2>
+</div>
     <table>
         <thead>
             <tr>
@@ -56,16 +57,15 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Aqui você colocaria os dados da tabela usando PHP, Angular, React, etc. -->
             <tr>
                 <td>1234 5678 9012 3456</td>
                 <td>Fulano de Tal</td>
                 <td>R$ 5.000,00</td>
                 <td>12/2024</td>
                 <td>
-                    <button>Alterar limite</button>
-                    <button>Ver fatura</button>
-                    <button>Ativar/Desativar</button> 
+                    <button class="limite">Alterar limite</button>
+                    <button class="fatura">Ver fatura</button>
+                    <button class="ativar">Ativar/Desativar</button> 
                     <!-- aqui deve ser usado js para alterar o estado do botao após clicar no mesmo -->
                 </td>
             </tr>
@@ -73,31 +73,7 @@
 </main>  
 <footer>
     <h2> Todos os direitos reservados para CleanFinance&trade;. </h2>
-    <div class="grid-footer">
-      <div class="grid-ul">
-          <div class="item">
-              <ul>
-                  <li><b>Mapa do site</b></li>
-                  <li> <a href="../html/listagemClientes.html"> Clientes </a> </li>
-                  <li> <a href="../html/cartoes.html"> Cartões</a> </li>
-                  <li> <a href="../html/compras.html"> Compras </a> </li>
-                  <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
-              </ul>
-          </div>
-      <div class="item">
-          <ul>
-              <li><b>Fale conosco</b></li>
-              <li> <a href="../html/listagemClientes.html"> Clientes </a> </li>
-              <li> <a href="../html/cartoes.html"> Cartões</a> </li>
-              <li> <a href="../html/compras.html"> Compras </a> </li>
-              <li> <a href="../html/relatorios.html"> Relatórios </a> </li>
-          </ul>
-      </div>
-      
-      </div>
-   
-    <span> </span>
-  </footer>
+    </footer>
   <script src="index.js"></script>
 </body>
 </html>

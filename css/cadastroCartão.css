@@ -1,33 +1,13 @@
 @charset "utf-8";
 @import url(style.css);
-main{
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-input {
-    width: 250px ;
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 5px;
-}
-.um {
-display: flex;
-justify-content: space-around;
-margin-top: 3em;
-margin-bottom: 3em;
-}
-.dois {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
+
 .custom-select {
     position: relative;
     display: inline-block;
+    
 }
 /* Estilizando a seta */
-.custom-select select {
+.custom-select > select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -52,6 +32,11 @@ margin-bottom: 3em;
     border-style: solid;
     border-color: #666 transparent transparent transparent;
 }
+.button {
+margin-top: 2em;
+margin-bottom: 2em;
+padding: 1em;
+}
 .signUp{
     border: 1px solid black;
     border-radius: 20px;
@@ -61,4 +46,25 @@ margin-bottom: 3em;
     border: 1px solid black;
     border-radius: 20px;
     background-color: var(--main-color);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+margin-bottom: 3em;
+    margin-top: 3em ;
+}
+
+form > input {
+    margin: 5px;
+    width: 200px;
+    height: 25px;
+padding: 5px;
+    border-radius: 15px;
+}
+
+
+main {
+
+    margin-top: 3em;
 }
